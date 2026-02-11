@@ -65,11 +65,38 @@
             <h2>Contato</h2>
             <p>Tem alguma idéia de projeto ? Entre em contato conosco</p>
 
-            <address>
-                E-mail: <a href="mailto: nando@nando.com">nando@nando.com</a> <br>
-                Telefone: <a href="tel: +5547382113">999-999</a>
-            </address>
+            <form action="">
+                <label for="nome" >Nome: </label>
+                <input type="text" name="name" id="name" required> <br>
 
+                <label for="nome" >E-mail: </label>
+                <input type="email" name="email" id="email" required> <br>
+
+                <label for="tel" >Telefone: </label>
+                <input type="tel" name="tel" id="tel"> <br>
+
+                <label for="assunto">Assunto: </label>
+                
+                <select name="" id="">
+                    <option value="orcamento">Orçamento</option>
+                    <option value="duvida">Duvida</option>
+                    <option value="outro">Outro assunto</option>
+                </select>
+                <br>
+
+                <label for="mensagem" >Mensagem</label> <br>
+
+                <textarea name="mensagem" id="mensagem" cols="30" rows="5" required></textarea>
+
+                <br>
+                <input type="checkbox" name="inscricao" id="inscricao">
+                <label for="inscricao">Desejo receber  letter</label>
+                
+                <br>
+                <input type="submit" value="Enviar Mensagem">
+
+            </form>
+           
         </section>
 
 
