@@ -1,0 +1,24 @@
+*{
+    background-color: gainsboro;
+}
+
+.block{
+    padding: 5px;
+    margin: 5px;
+    border: 1px solid black;
+    display: block;
+}
+
+.inline{
+    padding: 15px;
+    margin: 15px;
+    border: 1px solid blue;
+    display: inline;
+}
+
+.inline-block{
+    padding: 5px;
+    margin: 15px;
+    border: 1px solid red;
+    display: inline-block;
+}
