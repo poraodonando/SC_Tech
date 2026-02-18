@@ -38,7 +38,8 @@ a {
     color: black;
     text-decoration: none;
     font-weight: bolder;
-    background-color: blanchedalmond;
+    
+    
 }
 
 a:hover{
@@ -51,10 +52,16 @@ section, div{
     line-height: 2em;
     
 }
+ div > p{
+    padding: 30px;
+    max-height: 300px;
+    margin: 50px;
+}
 
 
 div{
     padding-left: 30px;
+    height: 600px;
 }
 
 section.normal{
@@ -64,10 +71,30 @@ section.normal{
 
 section.paralax, div.paralax{
     background-color: grey;
+    box-shadow:  inset 6px 6px 13px 0px rgba(0, 0, 0, 0.349);
+    background-attachment: fixed;
+    padding: 30px;
 }
 .paralax > p{
     width: 400px;
-    background-color: black;
+    background-color: rgba(0, 0, 0, 0.904);
+    color: white;
+    margin: 5px;
+    height: 600px; 
+
+}
+
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    margin-top: 10px;
+    cursor: pointer;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    margin-left: 150px;
 }
 
 
@@ -76,7 +103,7 @@ footer{
     color: wheat;
     text-align: center;
     padding: 10px;
-    position: fixed;
+    
     bottom: 0;
     width: 100%;
 }
@@ -85,4 +112,37 @@ footer{
     background-color: rgb(199, 199, 199);
     padding: 20px;
     border-radius: 10px;
+}
+section#pessoal{
+    background-image: url("../imagens/eu.jpg") 
+}
+
+#proj_01{
+    background-image: url("../imagens/1-obmep_1.PNG");
+    background-position: right center;
+    
+}
+
+#proj_02{
+    background-image: url("../imagens/2-herobot_1.PNG");
+    background-repeat: no-repeat;
+    background-position: 100%;   
+    
+}
+#proj_03{
+    background-image: url("/imagens/4-calculadora_1.PNG");
+    background-position: right center;
+}
+#proj_04{
+    background-image: url("/imagens/6-noticia_cidade_1.PNG");
+    background-position: right center;
+    
+}
+#proj_05{
+    background-image: url("/imagens/7-techblog_2.PNG");
+    background-position: right center;
+}
+
+#proj_06{
+    background-image: url("/imagens/8-crazygame_1.PNG");
 }
