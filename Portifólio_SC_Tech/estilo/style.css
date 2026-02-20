@@ -169,6 +169,16 @@ section#pessoal{
     background-image: url("../imagens/eu.jpg") 
 }
 
+#projetos > p{
+    
+    text-align: justify;
+    
+    padding: 10px 30px 30px 40px;
+}
+#projetos > h1{
+    padding-left: 20px;
+}
+
 #proj_01{
     /* background-image: url("../imagens/1-obmep_1.PNG"); */
     background-position: right center;
