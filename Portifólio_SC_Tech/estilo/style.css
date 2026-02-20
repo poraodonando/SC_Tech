@@ -3,6 +3,7 @@
 *{
     margin: 0px;
     padding: 0px;
+    font-weight: bold;
 }
 html, body{
     font-family: Arial, Helvetica, sans-serif;
@@ -16,11 +17,15 @@ header{
     color: white;
     padding: 20px;
     text-align: center;
+    background-image: linear-gradient(to right,  #00bfff, #00008b);
 
 }
 
 header > h1{
     padding: 50px;
+    font-size: 120px;
+    background-image: linear-gradient(to right, #00008b, #00bfff);
+    border-radius: 10px;
     
 }
 header > p{
@@ -32,6 +37,7 @@ nav{
     grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
     gap: 20px;
     padding: 20px;
+    background-image: linear-gradient(to right,  #00bfff, #00008b);
 
 }
 a {
@@ -43,7 +49,7 @@ a {
 }
 
 a:hover{
-    color: gray;
+    color: rgb(0, 0, 0);
 
 }
 section, div{
@@ -54,7 +60,7 @@ section, div{
 }
  div > p{
     padding: 30px;
-    max-height: 300px;
+    max-height: 400px;
     margin: 50px;
 }
 
@@ -75,15 +81,65 @@ section.paralax, div.paralax{
     background-attachment: fixed;
     padding: 30px;
 }
+
+section.content:hover{
+    background-image: linear-gradient(to right, #00008b, #00bfff);
+}
 .paralax > p{
     width: 400px;
     background-color: rgba(0, 0, 0, 0.904);
     color: white;
     margin: 5px;
     height: 600px; 
+    border-radius: 10px;
 
 }
+#habilidades{
+    background-color: #00008b;
+}
+#habilidades > h1{
+    padding: 30px;
+    text-align: center;
+    justify-content: center;
+    color: white;
 
+}
+#habilidades> ul>li{
+    padding-left: 60px;
+    
+}
+
+ul::before {
+	content: '';
+	width: 0.5rem;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 8%;
+	background: peachpuff;
+	z-index: -1;
+    text-align: center;
+    justify-content: center;
+}
+
+li {
+	padding: 0.5rem 1.5rem 1rem;
+	border-radius: 5px;
+	background: rgb(31, 46, 255);
+    text-align: center;
+    color: white;
+    font-size: 20px;
+    justify-content: center;
+       
+}
+
+li:hover{
+    background-image: linear-gradient(to right, #00008b, #00bfff);
+}
+
+li + li {
+	margin-top: 1rem;
+}
 
 button {
     padding: 10px 20px;
@@ -97,30 +153,34 @@ button {
     margin-left: 150px;
 }
 
-
-footer{
-    background-color: black;
-    color: wheat;
-    text-align: center;
-    padding: 10px;
-    
-    bottom: 0;
-    width: 100%;
+button:hover{
+     background-color: #6a4caf;
 }
 
+
+
 .content{
-    background-color: rgb(199, 199, 199);
+    background-color:rgb(0, 183, 255);
     padding: 20px;
     border-radius: 10px;
+    text-align: center;
 }
 section#pessoal{
     background-image: url("../imagens/eu.jpg") 
 }
 
 #proj_01{
-    background-image: url("../imagens/1-obmep_1.PNG");
+    /* background-image: url("../imagens/1-obmep_1.PNG"); */
     background-position: right center;
+    animation: troca1 10s infinite;
+}
     
+
+
+@keyframes troca1{
+    0%{background-image: url("/imagens/1-obmep_1.PNG");}
+    50%{background-image: url("/imagens/1-obmep_2.PNG");}
+    100%{background-image: url("/imagens/1-obmep_3.PNG");}
 }
 
 #proj_02{
@@ -133,16 +193,69 @@ section#pessoal{
     background-image: url("/imagens/4-calculadora_1.PNG");
     background-position: right center;
 }
+
 #proj_04{
     background-image: url("/imagens/6-noticia_cidade_1.PNG");
     background-position: right center;
     
 }
 #proj_05{
-    background-image: url("/imagens/7-techblog_2.PNG");
-    background-position: right center;
+    background-image: url("/imagens/7-techblog_1.PNG");
+    /* background-position: right center; */
 }
 
 #proj_06{
-    background-image: url("/imagens/8-crazygame_1.PNG");
+    /* background-image: url("/imagens/8-crazygame_1.PNG"); */
+     animation: troca6 10s infinite;
+}
+
+@keyframes troca6{
+    0%{background-image: url("/imagens/8-crazygame_1.PNG");}
+    25%{background-image: url("/imagens/8-crazygame_2.PNG");}
+    50%{background-image: url("/imagens/8-crazygame_3.PNG");}
+    75%{background-image: url("/imagens/8-crazygame_4.PNG");}
+    100%{background-image: url("/imagens/8-crazygame_5.PNG");}
+}
+
+#proj_07{
+  /* width: 100vw;
+  height: 100vh; */
+  background-size: cover;
+  background-position: center;
+  animation: troca7 10s infinite;
+}
+
+@keyframes troca7{
+    0%{background-image: url("/imagens/9_mochi_1.PNG");}
+    50%{background-image: url("/imagens/9_mochi_2.PNG");}
+    100%{background-image: url("/imagens/9_mochi_3.PNG");}
+}
+
+
+footer{
+    background-color: black;
+    color: wheat;
+    text-align: center;
+    padding: 10px;
+    max-height: 200px;
+    bottom: 0;
+    
+}
+
+.social {
+  display: flex;
+  gap: 20px;
+  max-height: 0px;
+}
+
+.social img {
+  width: 32px;
+  transition: 0.3s;
+  cursor: pointer;
+}
+.social img:hover {
+  transform: scale(1.2);
+}
+.social >a{
+    max-width: 50px;
 }
