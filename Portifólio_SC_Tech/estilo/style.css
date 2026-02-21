@@ -11,6 +11,12 @@ html, body{
     min-width: 100vh;
     
 }
+body > #tabuleiro-jogo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+}
 
 header{
     background-color: blue;
@@ -240,6 +246,33 @@ section#pessoal{
     50%{background-image: url("/imagens/9_mochi_2.PNG");}
     100%{background-image: url("/imagens/9_mochi_3.PNG");}
 }
+/* CSS do Jogo da velha  */
+
+.tabuleiro{
+    display: grid;
+    grid-template-columns: repeat(3,100px);
+    gap: 10px;
+    max-height: 200px;
+
+}
+.celula{
+    display: flex;
+    background-color: grey;
+    width: 100px;
+    height: 100px;
+    justify-content: center;
+    align-items: center;
+    font-size: 46px;
+    cursor: pointer;
+}
+#reinicia{
+    padding: 15px;
+    margin: 10px;
+}
+
+/*^^^^^^CSS do Jogo da velha^^^^  */
+
+
 
 
 footer{
